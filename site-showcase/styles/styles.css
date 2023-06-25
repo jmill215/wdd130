@@ -1,0 +1,252 @@
+/*Importing Fonts from the site-plan page*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed&display=swap');
+
+/*CSS Reset/baseline rules*/ 
+body {
+    background-color: #FFFFFF;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Ensuring that all page elements do not extend out of the sides*/
+#content {
+    min-height: 50%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/*Header & sub-header related css*/
+header {
+    background-color: #5E8C61;
+    display:grid;
+    grid-template-columns: 170px auto;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    background-color: #0A1045;
+    color: #FFFFFF;
+}
+
+/*Footer and all related a, p, etc. tags*/
+footer {
+    background-color: #5E8C61; 
+    padding: 25px 50px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ footer a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+ }
+
+ footer a:hover {
+    color: #FFFFFF;
+ }
+
+ footer p {
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    color: #FFFFFF
+ }
+
+ footer p a:hover {
+    text-decoration: underline;
+ }
+
+ footer .social img {
+    padding-top: 15px;
+ }
+
+ /*Content for Home page*/
+
+ /*Banner Display formatting*/
+ .banner-display {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 710px;
+ }
+
+ /*Banner Img formatting*/
+ #banner-img {
+    grid-area: 1 / 1/ 4 / 7;
+ }
+
+ #banner-img img {
+    width: 100%;
+    height: 700px;
+    object-fit: none;
+ }
+
+ /*Banner Text formatting*/
+ #banner-text {
+    padding-top: 100px;
+    justify-content: center;
+    align-content: center;
+    grid-area: 1 / 2 / 4 / 6;
+    color: #ffffff
+ }
+
+ #banner-text h2 {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+ }
+
+ /*Start of sub-grid css (to be used across 2 pages)*/
+ .sub-display {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0;
+    row-gap: 0;
+    justify-content: center;
+ }
+
+ /*Children elements of sub display, remember to reverse the position of 2nd and 3rd div to flip*/
+#bg-color-display {
+    grid-area: 1 / 1 / 8 / 10;
+    background-color: #4E6151;
+}
+
+#contact-img {
+    grid-area: 1 / 1 / 8 / 5;
+}
+
+#contact-img img {
+    width: 600px;
+    height: 600px;
+    padding-left: 5px;
+}
+
+#contact-text {
+    grid-area: 2 / 5 / 8 / 10;
+    color: #ffffff;
+    justify-content: left;
+}
+
+/*Home page sub-grid number 2*/
+#bg-color {
+    grid-area: 1 / 1 / 8 / 10;
+    background-color: #7A82AB;
+}
+
+#template-img {
+    grid-area: 1 / 9 / 8 / 10;
+    padding-right: 5px;
+}
+
+#template-img img {
+    width: 600px;
+    height: 600px;
+}
+
+#template-text {
+    grid-area: 2 / 1 / 8 / 7;
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+/*Elements for Template page*/
+/*---------------------------------------------------------------------------*/
+
+#title {
+    color: #000000;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.showcase_contain {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid: 0;
+    grid-row: 0;
+    background-color:#504b4b
+}
+
+/*Simple Holder CSS*/
+#simple-holder {
+    grid-area: 2 / 2 / 9 / 4;
+}
+#simple-holder img {
+    width: 600px;
+    height: 1080px;
+    justify-self: center;
+}
+
+/*Compact Holder CSS*/
+#compact-holder {
+    grid-area: 2 / 5 / 9 / 7;
+    justify-self: center;
+}
+
+#compact-holder img {
+    width: 600px;
+    height: 1080px;
+}
+
+
+/*text1 CSS*/
+#text1 {
+    grid-area: 10 / 2 / 12 / 4;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 400px;
+    background-color: #ffffff;
+    color:#000000;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: -60px;
+}
+
+/*text2 CSS*/
+#text2 {
+    grid-area: 10 / 5 / 12 / 7;
+    text-align: center;
+    align-content:center;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 400px;
+    background-color: #ffffff;
+    color:#000000;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+
+
+
