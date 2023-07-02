@@ -119,8 +119,12 @@ footer {
 
  #banner-text h2 {
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-    font-size: 3.5em;
+    font-size: 3.7em;
     text-align: center;
+ }
+
+ #banner-text p {
+    font-size: 19px;
  }
 
  /*Start of sub-grid css (to be used across 2 pages)*/
@@ -153,6 +157,16 @@ footer {
     grid-area: 2 / 5 / 8 / 10;
     color: #ffffff;
     justify-content: left;
+    padding-right: 50px;
+}
+
+#contact-text h2 {
+    font-size: 50px;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+} 
+
+#contact-text p {
+    font-size: 20px;
 }
 
 .contact-box {
@@ -196,8 +210,17 @@ footer {
     padding-left: 30px;
 }
 
+#template-text h2 {
+    font-size: 50px;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+} 
+
+#template-text p {
+    font-size: 20px;
+}
+
 .template-box {
-    background-color: #9E6240;
+    background-color: #0A1045;
     color:#FFFFFF;
     font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     padding: 15px 30px;
