@@ -263,8 +263,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(11, 1fr);
-    grid: 0;
-    grid-row: 0;
     background-color:#504b4b
 }
 
