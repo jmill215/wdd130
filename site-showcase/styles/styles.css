@@ -190,6 +190,7 @@ footer {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
   
